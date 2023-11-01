@@ -1,58 +1,58 @@
-.mega-bloco-principal{
+.loto-bloco-principal{
     display: flex;
     padding: 30px 0px;
     border-bottom: 1px solid #ddd;
 
 }
 
-.mega-bloco-direita{
+.loto-bloco-direita{
     margin-left: 50px;
 }
 
-.mega-bloco-loteria{
+.loto-bloco-loteria{
     display: flex;
 }
 
-.mega-nome-loteria{
+.loto-nome-loteria{
     font-size: 28px;
     font-weight: bold;
-    color: #209869;
+    color: #930089;
     margin-left: 10px;
 }
 
-.mega-bloco-estimativa{
+.loto-bloco-estimativa{
     width: 240px;
     margin-left: 45px;
     margin-top: 15px;
 }
 
-.mega-texto-estimativa{
+.loto-texto-estimativa{
     font-size: 15px;
     color: #4c556c;
 }
 
-.mega-valor-estimativa{
+.loto-valor-estimativa{
     font-size: 20px;
-    color: #209869;
+    color: #930089;
     font-weight: bold;
     margin-top: 15px;
 }
 
-.mega-linha-bola{
+.loto-linha-bola{
     display: flex;
+    border-bottom: 1px solid #ddd;
 }
 
-.mega-bola{
-    font-size: 18px;
+.loto-bola{
+    font-size: 20px;
     font-weight: bold;
-    background-color: #209869;
-    color: white;
+    color: #930089;
     border-radius: 25px;
     padding: 10px;
     margin: 0px 10px;
 }
 
-.mega-texto-acumulou{
+.loto-texto-acumulou{
     font-size: 20px;
     font-weight: bold;
     color: #0066b3;
@@ -60,7 +60,7 @@
     padding-left: 15px;
 }
 
-.mega-data-concurso{
+.loto-data-concurso{
     margin-top: 15px;
     color: #4c556c;
     padding-left: 15px;

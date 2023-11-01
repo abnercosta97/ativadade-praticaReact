@@ -11,17 +11,35 @@ export default function Megasena(){
                     <img src={trevo} alt="Megasena" />
                     <span className="mega-nome-loteria">MEGA-SENA</span>
                 </div>
-                <div>
-                    <div>
+                <div className="mega-bloco-estimativa">
+                    <div className="mega-texto-estimativa">
                         Estimativa de prêmio do próximo concurso. Sorteio em {megasena.dataApuracao}
                     </div>
-                    <div>
-                        {megasena.valorEstimadoProximoConcurso }
+                    <div className="mega-valor-estimativa">
+                        {megasena.valorEstimadoProximoConcurso.toLocaleString("pt-Br",{
+                            style:"currency", currency:"BRL"
+                        })}
                     </div>
                 </div>
             </div>
             <div className="mega-bloco-direita">
-                Direita
+                <div className="mega-linha-bola">
+                    {
+                        megasena.dezenas.map(
+                            dezena => <div className="mega-bola" key={dezena}>{dezena}</div>
+                        )
+                    }
+                </div>
+                <div className="mega-texto-acumulou">
+                    {
+                        megasena.acumulado ? "ACUMULOU!" : ""
+                    }
+                </div>
+                <div className="mega-data-concurso">
+                    {
+                        `Concruso ${megasena.numeroDoConcurso} ${megasena.dataPorExtenso} `
+                    }
+                </div>
             </div>
         </div>
     )

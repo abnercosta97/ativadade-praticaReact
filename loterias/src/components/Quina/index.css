@@ -1,58 +1,58 @@
-.mega-bloco-principal{
+.quina-bloco-principal{
     display: flex;
     padding: 30px 0px;
     border-bottom: 1px solid #ddd;
 
 }
 
-.mega-bloco-direita{
+.quina-bloco-direita{
     margin-left: 50px;
 }
 
-.mega-bloco-loteria{
+.quina-bloco-loteria{
     display: flex;
 }
 
-.mega-nome-loteria{
+.quina-nome-loteria{
     font-size: 28px;
     font-weight: bold;
-    color: #209869;
+    color: #260085;
     margin-left: 10px;
 }
 
-.mega-bloco-estimativa{
+.quina-bloco-estimativa{
     width: 240px;
     margin-left: 45px;
     margin-top: 15px;
 }
 
-.mega-texto-estimativa{
+.quina-texto-estimativa{
     font-size: 15px;
     color: #4c556c;
 }
 
-.mega-valor-estimativa{
+.quina-valor-estimativa{
     font-size: 20px;
-    color: #209869;
+    color: #260085;
     font-weight: bold;
     margin-top: 15px;
 }
 
-.mega-linha-bola{
+.quina-linha-bola{
     display: flex;
 }
 
-.mega-bola{
+.quina-bola{
     font-size: 18px;
     font-weight: bold;
-    background-color: #209869;
+    background-color: #260085;
     color: white;
     border-radius: 25px;
     padding: 10px;
     margin: 0px 10px;
 }
 
-.mega-texto-acumulou{
+.quina-texto-acumulou{
     font-size: 20px;
     font-weight: bold;
     color: #0066b3;
@@ -60,7 +60,7 @@
     padding-left: 15px;
 }
 
-.mega-data-concurso{
+.quina-data-concurso{
     margin-top: 15px;
     color: #4c556c;
     padding-left: 15px;
