@@ -5,7 +5,10 @@ import trevo from "../../assets/trevo-megasena.png"
 export default function Megasena(){
     const {megasena} = useLoteria();
     return (
-        <div className="mega-bloco-principal">
+        <>
+        {
+            megasena.dataApuracao ?
+        <div className="mega-bloco-principal principal">
             <div >
                 <div className="mega-bloco-loteria">
                     <img src={trevo} alt="Megasena" />
@@ -41,6 +44,9 @@ export default function Megasena(){
                     }
                 </div>
             </div>
-        </div>
+        </div> : 
+                <div className="prinpal-carregando">Carregando...</div>
+            }
+        </>
     )
 }
