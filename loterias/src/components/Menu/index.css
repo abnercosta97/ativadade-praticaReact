@@ -3,9 +3,11 @@
     font-family: roboto;
 }
 
-.link {
+.ativo {
     color: #aaa;
     pointer-events: none;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .menu-mega {

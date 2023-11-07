@@ -10,6 +10,7 @@ export function Provider({children}:any) {
   const [megasena, setMegasena] = useState({} as Props);
   const [lotofacil, setLotofacil] = useState({} as Props);
   const [quina, setQuina] = useState({} as Props);
+  const [ativo, setAtivo] = useState("megasena");
 
   /*function testar(){
     loteria.get()
@@ -31,7 +32,7 @@ export function Provider({children}:any) {
   } ,[]);
 
   return (
-    <Contexto.Provider value={{megasena, lotofacil, quina}} >
+    <Contexto.Provider value={{megasena, lotofacil, quina, ativo, setAtivo}} >
       {children}
     </Contexto.Provider>
   );

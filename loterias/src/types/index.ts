@@ -2,6 +2,8 @@ export interface LoteriaProps {
     lotofacil : Props;
     megasena: Props;
     quina: Props;
+    ativo: string;
+    setAtivo: (value:string) => void;
 }
 
 export interface Props {
