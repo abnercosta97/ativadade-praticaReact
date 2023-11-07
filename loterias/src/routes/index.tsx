@@ -20,5 +20,5 @@ export default function Rotas() {
 }
 
 function Erro() {
-    return <div>Rota não encontrada</div>;
+    return <div className="principal-carregando">Rota não encontrada</div>;
   }
