@@ -41,10 +41,7 @@ img
 
 Ferramentas utilizadas no projeto
 
-* [HTML](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [CSS](https://maven.apache.org/) - Gerente de Dependência
-* [TypeScript](https://rometools.github.io/rome/) - Usada para gerar RSS
-* [React](https://rometools.github.io/rome/) - Usada para gerar RSS
+[![My Skills](https://skillicons.dev/icons?i=ts,html,css,react)](https://skillicons.dev)
 
 ## 📌 Observação:
 
