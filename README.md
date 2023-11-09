@@ -34,7 +34,7 @@ npm start
 
 Abaixo imagens do projeto rodando localmente.
 
-img
+![print tela funcionando](https://github.com/abnercosta97/ativadade-praticaReact/blob/main/print.png)
 
 
 ## 🛠️ Construído com
