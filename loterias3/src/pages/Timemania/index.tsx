@@ -3,7 +3,7 @@ import "./index.css";
 import trevo from "../../assets/trevo-megasena.png"
 import { Acumulou, Carregando, Direita, Esquerda, Estimativa, NomeLoteria, Principal, Resultado } from "../../components";
 
-export default function Megasena(){
+export default function Timemania(){
     const {megasena:sorteio} = useLoteria();
     return (
         <>
