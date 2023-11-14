@@ -1,5 +1,4 @@
 import { useLoteria } from "../../hooks";
-import "./index.css";
 import trevo from "../../assets/trevo-megasena.png"
 import { Acumulou, Carregando, Data, Direita, Esquerda, Estimativa, NomeLoteria, Principal, Resultado } from "../../components";
 
