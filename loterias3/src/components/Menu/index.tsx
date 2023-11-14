@@ -16,7 +16,7 @@ export default function Menu() {
           () =>{ 
             setAtivo("timemania");
             setTema(timemania);
-          }} className={ativo === "timemania" ? "ativo" : "menu-loto"}>Timemania</Link>
+          }} className={ativo === "timemania" ? "ativo" : "timemania"}>Timemania</Link>
         <Link to="quina" onClick={() => {
            setAtivo("quina");
            setTema(quina);

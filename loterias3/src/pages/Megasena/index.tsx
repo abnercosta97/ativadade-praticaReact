@@ -1,7 +1,7 @@
 import { useLoteria } from "../../hooks";
 import "./index.css";
 import trevo from "../../assets/trevo-megasena.png"
-import { Acumulou, Carregando, Direita, Esquerda, Estimativa, NomeLoteria, Principal, Resultado } from "../../components";
+import { Acumulou, Carregando, Data, Direita, Esquerda, Estimativa, NomeLoteria, Principal, Resultado } from "../../components";
 
 export default function Megasena(){
     const {megasena:sorteio} = useLoteria();
@@ -17,11 +17,10 @@ export default function Megasena(){
             <Direita>
             <Resultado dezenas={sorteio.dezenas} />
             <Acumulou quantidadeGanhadores={sorteio.quantidadeGanhadores} />
-                <div className="mega-data-concurso">
-                    {
-                        `Concruso ${sorteio.numeroDoConcurso} ${sorteio.dataPorExtenso} `
-                    }
-                </div>
+            <Data
+              dataPorExtenso={sorteio.dataPorExtenso}
+              numeroDoConcurso={sorteio.numeroDoConcurso}
+            />
             </Direita>
         </Principal> : 
         <Carregando />

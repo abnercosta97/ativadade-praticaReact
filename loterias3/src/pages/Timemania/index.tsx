@@ -1,27 +1,26 @@
 import { useLoteria } from "../../hooks";
 import "./index.css";
-import trevo from "../../assets/trevo-megasena.png"
-import { Acumulou, Carregando, Direita, Esquerda, Estimativa, NomeLoteria, Principal, Resultado } from "../../components";
+import trevo from "../../assets/trevo-timemania.png"
+import { Acumulou, Carregando, Data, Direita, Esquerda, Estimativa, NomeLoteria, Principal, Resultado } from "../../components";
 
 export default function Timemania(){
-    const {megasena:sorteio} = useLoteria();
+    const {timemania:sorteio} = useLoteria();
     return (
         <>
         {
             sorteio.dataApuracao ?
         <Principal>
             <Esquerda>
-                <NomeLoteria nome="MEGA-SENA" trevo={trevo} />
+                <NomeLoteria nome="TIMEMANIA" trevo={trevo} />
                 <Estimativa dataProximoConcurso={sorteio.dataProximoConcurso} valorEstimadoProximoConcurso={sorteio.valorEstimadoProximoConcurso} />
             </Esquerda>
             <Direita>
             <Resultado dezenas={sorteio.dezenas} />
             <Acumulou quantidadeGanhadores={sorteio.quantidadeGanhadores} />
-                <div className="mega-data-concurso">
-                    {
-                        `Concruso ${sorteio.numeroDoConcurso} ${sorteio.dataPorExtenso} `
-                    }
-                </div>
+            <Data
+              dataPorExtenso={sorteio.dataPorExtenso}
+              numeroDoConcurso={sorteio.numeroDoConcurso}
+            />
             </Direita>
         </Principal> : 
         <Carregando />
